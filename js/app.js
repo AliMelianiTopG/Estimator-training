@@ -81,7 +81,7 @@ function render(){
 }
 
 function getImages(){
-  return ["image1.png","image2.png","image3.png","image4.png","image5.png","image6.png","image7.png","image8.png","image9.jpeg"];
+  return [];
 }
 
 function showQuiz(){
