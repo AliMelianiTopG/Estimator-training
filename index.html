@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tesla Estimator Training</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">⚡</div>
+      <div>
+        <h2>Tesla Estimator</h2>
+        <p>Training</p>
+      </div>
+    </div>
+    <nav id="nav"></nav>
+    <div class="progress">
+      <div id="progressBar"></div>
+    </div>
+    <div class="footer">Built by Ali Meliani</div>
+  </aside>
+
+  <main class="content">
+    <header class="topbar">
+      <h1 id="title">Introduction</h1>
+      <div class="actions">
+        <button id="resetBtn">Reset</button>
+      </div>
+    </header>
+
+    <section id="slide" class="slide"></section>
+
+    <section id="quiz" class="quiz hidden">
+      <h2>Quick Check</h2>
+      <div id="qContainer"></div>
+      <button id="nextQ">Next</button>
+    </section>
+
+    <section id="complete" class="complete hidden">
+      <h2>🎓 Training Complete</h2>
+      <p id="finalScore"></p>
+      <input id="nameInput" placeholder="Your name (optional)" />
+      <button id="certBtn">Generate Certificate</button>
+      <div id="certificate" class="certificate hidden"></div>
+    </section>
+  </main>
+</div>
+
+<div id="lightbox" class="lightbox hidden">
+  <span id="closeLightbox">✕</span>
+  <img id="lightboxImg" />
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
