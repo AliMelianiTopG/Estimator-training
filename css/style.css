@@ -1,41 +1,55 @@
-
-:root{
-  --bg:#0b1220;
-  --panel:#0f172a;
-  --card:#111827;
-  --accent:#e50914;
-  --muted:#94a3b8;
-  --text:#e5e7eb;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
 }
-*{box-sizing:border-box}
-body{margin:0;background:linear-gradient(180deg,#0b1220,#020617);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial}
-.app{display:grid;grid-template-columns:280px 1fr;min-height:100vh}
-.sidebar{background:rgba(15,23,42,.9);border-right:1px solid #1f2937;padding:16px;display:flex;flex-direction:column}
-.brand{display:flex;gap:10px;align-items:center;margin-bottom:12px}
-.logo{width:36px;height:36px;border-radius:10px;background:var(--accent);display:grid;place-items:center;font-weight:700}
-nav a{display:block;padding:10px 12px;border-radius:10px;color:var(--text);text-decoration:none;margin:6px 0;border:1px solid #1f2937}
-nav a.active{background:rgba(229,9,20,.15);border-color:rgba(229,9,20,.5)}
-.progress{height:6px;background:#020617;border-radius:6px;margin-top:auto;overflow:hidden}
-#progressBar{height:100%;width:0%;background:var(--accent)}
-.footer{margin-top:12px;color:var(--muted);font-size:12px}
-.content{padding:24px}
-.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
-.actions button{background:#111827;color:var(--text);border:1px solid #1f2937;border-radius:10px;padding:8px 12px}
-.slide{display:grid;gap:16px}
-.card{background:rgba(17,24,39,.8);border:1px solid #1f2937;border-radius:16px;padding:16px}
-.hero{font-size:28px;font-weight:700}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
-.imgCard img{width:100%;border-radius:12px;cursor:pointer}
-.kpi{display:flex;gap:10px;flex-wrap:wrap}
-.badge{background:#020617;border:1px solid #1f2937;border-radius:999px;padding:6px 10px;color:var(--muted)}
-.quiz{margin-top:20px}
-.hidden{display:none}
-.q{margin-bottom:12px}
-.q button{display:block;width:100%;margin:6px 0;padding:10px;border-radius:10px;border:1px solid #1f2937;background:#020617;color:var(--text)}
-.q button.correct{border-color:#22c55e}
-.q button.wrong{border-color:#ef4444}
-.complete{text-align:center;margin-top:20px}
-.certificate{margin-top:20px;padding:20px;border:1px solid #1f2937;border-radius:16px;background:#020617}
-.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.8);display:grid;place-items:center}
-.lightbox img{max-width:90%;max-height:90%}
-#closeLightbox{position:absolute;top:20px;right:20px;cursor:pointer}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #020617;
+  position: fixed;
+  padding: 20px;
+}
+
+.main {
+  margin-left: 240px;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #e2e8f0;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #1e293b;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #334155;
+}
+
+#slide {
+  background: #020617;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 700px;
+}
